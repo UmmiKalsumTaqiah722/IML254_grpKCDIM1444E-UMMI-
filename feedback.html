@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Group Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+            if (confirm("Thank you for your feedback!")) {
+                event.target.submit(); // Submit the form if the user presses OK
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="image/ss.png" target="_blank"><img src="image/ss.png" class="thumbnail-logo" style="width:70%"></a>
+        <a href="index.html">HOME</a>
+        <a href="company.html">COMPANY</a>
+        <div class="dropdown">
+            <button class="dropbtn">EXO <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="exo.html">Background</a>
+                <a href="exo_merch.html">Merchandise</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">RIIZE <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="riize.html">Background</a>
+                <a href="riize_merch.html">Merchandise</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">BIGBANG <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="bigbang.html">Background</a>
+                <a href="bigbang_merch.html">Merchandise</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">WINNER <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="winner.html">Background</a>
+                <a href="winner_merch.html">Merchandise</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">SEVENTEEN <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="seventeen.html">Background</a>
+                <a href="seventeen_merch.html">Merchandise</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">TWS <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="tws.html">Background</a>
+                <a href="tws_merch.html">Merchandise</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">BTS <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="bts.html">Background</a>
+                <a href="bts_merch.html">Merchandise</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">TXT <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="txt.html">Background</a>
+                <a href="txt_merch.html">Merchandise</a>
+            </div>
+        </div>
+    </div>
+</header>
+<br><br>
+<main>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" onsubmit="showConfirmation(event)">
+            <div class="contact-left-title">
+                <h2>Your Feedback</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="7daf6492-dc70-447a-9d0f-b6e37818b325">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="image/arrow_icon.png" alt=""></button>
+        </form>
+    </div>
+</main>
+<br><br><br><br>
+<footer style="background-color: #66CDAA; padding: 20px;">
+    <div class="footer-content">
+        <center>
+            <b>ABOUT US</b> <br><br>
+            <p>This website is an independent resource with only educational purposes. It provides relevant information and materials for the "IML254: Introduction to Web Content Development" course. Click on any of the following channels to contact us with your inquiries:</p><br>
+            &copy; 2024 Seoul Symphony. All rights reserved. <br><br>
+        </center><br>
+        <center>
+            <b>CONTACT US</b> <br>
+            <div class="wrapper">
+                <a href="https://www.facebook.com/profile.php?id=100070487522651&mibextid=JRoKGi" target="_blank" class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a href="https://x.com/hobertbby?t=amFGA-QvRUcE9CizHK_oGw&s=09" target="_blank" class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="https://www.instagram.com/hairienaarza?igsh=MWhpaGNoaGxodWV5eg==" target="_blank" class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <a href="https://youtube.com/@hhmaino?si=rLjUhwwoY2skn1bk" target="_blank" class="icon youtube">
+                    <div class="tooltip">Youtube</div>
+                    <span><i class="fab fa-youtube"></i></span>
+                </a>
+            </div>
+        
+            <a href="#top"><img src="image/icon.png" height="60px"></a>
+        </center>
+    </div>
+</footer>
+<br>
+<center>
+    <b>Last updated:</b> June 15, 2024 18:14 PM
+</center>
+</body>
+</html>
+
